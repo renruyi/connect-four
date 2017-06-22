@@ -107,8 +107,7 @@ class Board {
   }
 
   BRDiagCheck(player, col, row){
-    let startCol = col - Math.min(col, row);
-    let startRow = row - Math.min(col, row);
+    let startCol, startRow;
     if(col + row < this.rows){
       startCol = 0;
       startRow = col + row;
